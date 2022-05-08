@@ -8,12 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State private var rememberMe = false
-
+    @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
+    @Environment(\.managedObjectContext) var moc
+    
     var body: some View {
         VStack {
-            PushButton(title: "Remember Me", isOn: $rememberMe)
-            Text(rememberMe ? "On" : "Off")
+            List(students) { student in
+                Text(student.name ?? "Unkown")
+            }
+            Button("Add") {
+                let names = ["Takasur", "Ahmed", "Ali", "Waqas"]
+                let chosenName = names.randomElement()!
+                
+                let student = Student(context: moc)
+                student.id = UUID()
+                student.name = chosenName
+                
+                try? moc.save()
+            }
         }
     }
 }
