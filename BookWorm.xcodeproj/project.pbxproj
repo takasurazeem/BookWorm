@@ -15,6 +15,7 @@
 		F9CB5BCD28279E1D00F5F6D5 /* BookWormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB5BCC28279E1D00F5F6D5 /* BookWormUITests.swift */; };
 		F9CB5BCF28279E1D00F5F6D5 /* BookWormUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB5BCE28279E1D00F5F6D5 /* BookWormUITestsLaunchTests.swift */; };
 		F9CB5BDD2827A0C500F5F6D5 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB5BDC2827A0C500F5F6D5 /* PushButton.swift */; };
+		F9CB5BDF2827FD2900F5F6D5 /* TextEditorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB5BDE2827FD2900F5F6D5 /* TextEditorDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F9CB5BCC28279E1D00F5F6D5 /* BookWormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWormUITests.swift; sourceTree = "<group>"; };
 		F9CB5BCE28279E1D00F5F6D5 /* BookWormUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWormUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F9CB5BDC2827A0C500F5F6D5 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		F9CB5BDE2827FD2900F5F6D5 /* TextEditorDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				F9CB5BDC2827A0C500F5F6D5 /* PushButton.swift */,
+				F9CB5BDE2827FD2900F5F6D5 /* TextEditorDemo.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CB5BDF2827FD2900F5F6D5 /* TextEditorDemo.swift in Sources */,
 				F9CB5BB428279E1B00F5F6D5 /* ContentView.swift in Sources */,
 				F9CB5BB228279E1B00F5F6D5 /* BookWormApp.swift in Sources */,
 				F9CB5BDD2827A0C500F5F6D5 /* PushButton.swift in Sources */,
