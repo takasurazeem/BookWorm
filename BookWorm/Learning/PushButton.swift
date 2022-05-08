@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+/// ```Usage:
+///    var body: some View {
+///    VStack {
+///        PushButton(title: "Remember Me", isOn: $rememberMe)
+///        Text(rememberMe ? "On" : "Off")
+///    }
+/// }
 struct PushButton: View {
     let title: String
     @Binding var isOn: Bool
