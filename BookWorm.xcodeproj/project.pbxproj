@@ -19,6 +19,7 @@
 		F9CB5BE22828307500F5F6D5 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9CB5BE02828307400F5F6D5 /* Bookworm.xcdatamodeld */; };
 		F9CB5BE4282830E300F5F6D5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB5BE3282830E300F5F6D5 /* DataController.swift */; };
 		F9E1A63A2828A159002EC3CE /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1A6392828A159002EC3CE /* AddBookView.swift */; };
+		F9E1A63C2828A757002EC3CE /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1A63B2828A757002EC3CE /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F9CB5BE12828307400F5F6D5 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		F9CB5BE3282830E300F5F6D5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F9E1A6392828A159002EC3CE /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		F9E1A63B2828A757002EC3CE /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				F9CB5BDB2827A0B800F5F6D5 /* Learning */,
 				F9CB5BB128279E1B00F5F6D5 /* BookWormApp.swift */,
 				F9CB5BB328279E1B00F5F6D5 /* ContentView.swift */,
+				F9E1A63B2828A757002EC3CE /* RatingView.swift */,
 				F9CB5BE3282830E300F5F6D5 /* DataController.swift */,
 				F9E1A6392828A159002EC3CE /* AddBookView.swift */,
 				F9CB5BB528279E1D00F5F6D5 /* Assets.xcassets */,
@@ -283,6 +286,7 @@
 				F9E1A63A2828A159002EC3CE /* AddBookView.swift in Sources */,
 				F9CB5BDF2827FD2900F5F6D5 /* TextEditorDemo.swift in Sources */,
 				F9CB5BE4282830E300F5F6D5 /* DataController.swift in Sources */,
+				F9E1A63C2828A757002EC3CE /* RatingView.swift in Sources */,
 				F9CB5BB428279E1B00F5F6D5 /* ContentView.swift in Sources */,
 				F9CB5BB228279E1B00F5F6D5 /* BookWormApp.swift in Sources */,
 				F9CB5BDD2827A0C500F5F6D5 /* PushButton.swift in Sources */,
