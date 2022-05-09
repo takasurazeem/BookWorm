@@ -21,6 +21,7 @@
 		F9E1A63A2828A159002EC3CE /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1A6392828A159002EC3CE /* AddBookView.swift */; };
 		F9E1A63C2828A757002EC3CE /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1A63B2828A757002EC3CE /* RatingView.swift */; };
 		F9E1A63E2828B159002EC3CE /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1A63D2828B159002EC3CE /* EmojiRatingView.swift */; };
+		F9E1A6402828B446002EC3CE /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1A63F2828B446002EC3CE /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F9E1A6392828A159002EC3CE /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		F9E1A63B2828A757002EC3CE /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		F9E1A63D2828B159002EC3CE /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		F9E1A63F2828B446002EC3CE /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				F9CB5BDB2827A0B800F5F6D5 /* Learning */,
 				F9CB5BB128279E1B00F5F6D5 /* BookWormApp.swift */,
 				F9CB5BB328279E1B00F5F6D5 /* ContentView.swift */,
+				F9E1A63F2828B446002EC3CE /* BookDetailView.swift */,
 				F9E1A63B2828A757002EC3CE /* RatingView.swift */,
 				F9E1A63D2828B159002EC3CE /* EmojiRatingView.swift */,
 				F9CB5BE3282830E300F5F6D5 /* DataController.swift */,
@@ -288,6 +291,7 @@
 			files = (
 				F9E1A63A2828A159002EC3CE /* AddBookView.swift in Sources */,
 				F9E1A63E2828B159002EC3CE /* EmojiRatingView.swift in Sources */,
+				F9E1A6402828B446002EC3CE /* BookDetailView.swift in Sources */,
 				F9CB5BDF2827FD2900F5F6D5 /* TextEditorDemo.swift in Sources */,
 				F9CB5BE4282830E300F5F6D5 /* DataController.swift in Sources */,
 				F9E1A63C2828A757002EC3CE /* RatingView.swift in Sources */,
