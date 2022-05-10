@@ -19,11 +19,11 @@ struct BookDetailView: View {
     var body: some View {
         ScrollView {
             ZStack(alignment: .bottomTrailing) {
-                Image(book.genre ?? "Fantasy")
+                Image((book.genre! == "" ? "unknown" : book.genre)!)
                     .resizable()
                     .scaledToFit()
                 
-                Text(book.genre?.uppercased() ?? "FANTASY")
+                Text(book.genre! == "" ? "Unknown" : book.genre!.uppercased())
                     .font(.caption)
                     .fontWeight(.black)
                     .padding(8)
@@ -58,7 +58,7 @@ struct BookDetailView: View {
                 Label("Delete this book", systemImage: "trash")
             }
         }
-        .navigationTitle(book.title ?? "Unknown Book")
+        .navigationTitle(book.title!)
         .navigationBarTitleDisplayMode(.inline)
     }
     
