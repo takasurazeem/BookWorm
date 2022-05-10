@@ -32,7 +32,12 @@ struct BookDetailView: View {
                     .clipShape(Capsule())
                     .offset(x: -5, y: -5)
             }
-            
+            HStack {
+                Spacer()
+                Text(book.date!, style: .date)
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+            }
             Text(book.author ?? "Unknown author")
                 .font(.title)
                 .foregroundColor(.secondary)

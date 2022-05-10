@@ -17,6 +17,7 @@ struct AddBookView: View {
     @State private var rating = 3
     @State private var genre = ""
     @State private var review = ""
+    private var date = Date.now
     
     var isValidBook: Bool {
         !title.isEmpty
@@ -55,6 +56,7 @@ struct AddBookView: View {
                         newBook.rating = Int16(rating)
                         newBook.genre = genre
                         newBook.review = review
+                        newBook.date = date
                         
                         try? moc.save()
                         dismiss()
