@@ -10,6 +10,10 @@ import CoreData
 
 struct BookDetailView: View {
     
+    @Environment(\.managedObjectContext) var moc
+    @Environment(\.dismiss) var dismiss
+    @State private var showingDeleteAlert = false
+    
     let book: Book
     
     var body: some View {
@@ -32,16 +36,39 @@ struct BookDetailView: View {
             Text(book.author ?? "Unknown author")
                 .font(.title)
                 .foregroundColor(.secondary)
-
+            
             Text(book.review ?? "No review")
                 .padding()
-
+            
             RatingView(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
+        }
+        .alert("Delete book", isPresented: $showingDeleteAlert) {
+            Button("Delete", role: .destructive) {
+                deleteBook()
+            }
+            Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("Are you sure?")
+        }
+        .toolbar {
+            Button {
+                showingDeleteAlert.toggle()
+            } label: {
+                Label("Delete this book", systemImage: "trash")
+            }
         }
         .navigationTitle(book.title ?? "Unknown Book")
         .navigationBarTitleDisplayMode(.inline)
     }
+    
+    func deleteBook() {
+        moc.delete(book)
+        
+        try? moc.save()
+        dismiss()
+    }
+    
 }
 
 struct BookDetailView_Previews: PreviewProvider {
